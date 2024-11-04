@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+    <body class="bg-gray-100 font-sans">
+        <main class="mx-4 md:mx-10 lg:mx-20 p-6">
+            <div class="mb-12">
+                <div class="grid grid-cols-5 gap-6">
+                    <div class="col-span-4">
+                        <h2 class="text-4xl lg:text-6xl font-bold text-left">Our Courses</h2>
+                        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium voluptatum reiciendis aspernatur et nam aliquam iure non enim numquam exercitationem, quod dolore est id quo repudiandae! Repellendus, voluptatibus. Quae.</p>    
+                    </div>
+                </div>
+            </div>
+
+            <div id="course-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+
+            <div class="flex justify-center mt-8 space-x-4">
+                <button id="prev-btn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md disabled:opacity-50" onclick="prevPage()" disabled>Previous</button>
+                <div id="page-info" class="text-gray-700 font-medium inline-block relative top-2">Page 1 of 1</div>
+                <button id="next-btn" class="px-4 py-2 bg-gray-800 text-white rounded-md" onclick="nextPage()">Next</button>
+            </div>
+        </main>
+        <script src="../DataBase/MockData.js"></script>
+        <script src="CoursesListScript.js"></script>
+    </body>
+</html>
